@@ -1,5 +1,6 @@
 var express = require("express");
 var path = require("path");
+var opn = require("opn");
 var app = express();
 var port = 3000 || process.env.PORT;
 
@@ -10,4 +11,5 @@ app.get("/", function(req, res) {
 app.listen(port, function(err) {
   if (err) throw new Error(err);
   console.log(`Application is running at port ${port}`);
+  opn(`http://localhost:${port}`);
 });
