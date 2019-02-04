@@ -4,12 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile": "node-sass --output-style compressed -rw assets/sass -o assets/css"
+    "start": "node index.js",
+    "dev": "nodemon --ext js,html,css,scss index.js",
+    "compile": "node-sass --output-style compressed -rw public/assets/sass -o public/assets/css"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.16.4",
     "node-sass": "^4.11.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
   }
 }
