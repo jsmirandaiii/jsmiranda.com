@@ -6,6 +6,7 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon --ext js,html,css,scss index.js",
+    "deploy": "gcloud app deploy",
     "compile": "node-sass --output-style compressed -rw public/assets/sass -o public/assets/css"
   },
   "keywords": [],
@@ -13,6 +14,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.4",
+    "helmet": "^3.15.0",
     "node-sass": "^4.11.0"
   },
   "devDependencies": {
