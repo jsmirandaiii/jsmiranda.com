@@ -1,8 +1,12 @@
+require("dotenv").config();
 var express = require("express");
 var path = require("path");
 var helmet = require("helmet");
+var getENV = require("./helpers/getENV");
 var app = express();
+
 var port = process.env.PORT || 3000;
+var mode = getENV();
 
 app.disable("x-powered-by");
 app.set("trust proxy", true);
@@ -17,13 +21,19 @@ app.use(
     }
   }),
   function(req, res, next) {
-    if (!req.secure) {
+    if (!req.secure && (mode === "production" || mode === "maintenance")) {
       return res.redirect(301, "https://" + req.headers.host + req.originalUrl);
     }
     next();
   },
   express.static(path.resolve("./public/assets"))
 );
+
+if (mode === "maintenance") {
+  app.get("*", function(req, res) {
+    return res.sendFile(path.resolve("./public/maintenance.html"));
+  });
+}
 
 app.get("/", function(req, res) {
   return res.sendFile(path.resolve("./public/index.html"));
