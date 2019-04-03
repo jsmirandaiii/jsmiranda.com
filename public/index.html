@@ -6,38 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Jose Miranda | Software Engineer</title>
     <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
-    <link
       href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/vendors/bootstrap.min.css" />
     <link
       rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="/css/vendors/animate.css" />
     <link rel="stylesheet" href="/css/main.css" />
+    <script src="js/vendors/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/vendors/popper.min.js"></script>
+    <script src="js/vendors/bootstrap.min.js"></script>
   </head>
   <body>
     <!-- MAIN HEADER START -->
@@ -48,14 +31,22 @@
             class="navbar-toggler"
             type="button"
             data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
+            data-target="#navbar-content"
+            aria-controls="navbar-content"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
             <i class="fa fa-bars"></i>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="logo">
+            <img
+              alt="Jose Miranda"
+              class="logo__img"
+              src="/img/jsmiranda_logo.png"
+            />
+            <span class="logo__text">jsmiranda</span>
+          </div>
+          <div class="collapse navbar-collapse" id="navbar-content">
             <ul>
               <li
                 class="animated fadeInDown"
@@ -150,7 +141,7 @@
         </div>
       </div>
       <div
-        class="animated fadeIn header__vanta"
+        class="animated fadeIn header__vanta clearix"
         style="animation-delay: 2.5s"
       ></div>
     </header>
@@ -168,6 +159,17 @@
           </div>
           <!-- SECTION HEADER END -->
           <div class="row aboutme__row">
+            <!-- ABOUT ME IMAGE START -->
+            <div class="col-md-6">
+              <div class="aboutme__row__img-container">
+                <img
+                  class="aboutme__row__img-container--img"
+                  src="img/jose.jpg"
+                  alt="Jose Miranda"
+                />
+              </div>
+            </div>
+            <!-- ABOUT ME IMAGE END -->
             <div class="col-md-6">
               <p class="aboutme__row--text">
                 I'm a full-stack software engineer who enjoys building
@@ -212,17 +214,6 @@
               </div>
               <!-- SKILLS END -->
             </div>
-            <!-- ABOUT ME IMAGE START -->
-            <div class="col-md-6">
-              <div class="aboutme__row__img-container">
-                <img
-                  class="aboutme__row__img-container--img"
-                  src="img/jose.jpg"
-                  alt="Jose Miranda"
-                />
-              </div>
-            </div>
-            <!-- ABOUT ME IMAGE END -->
           </div>
         </div>
       </div>
@@ -243,8 +234,8 @@
 
           <div class="row experience-set">
             <!-- JOB 1 START -->
-            <div class="col-md-6">
-              <div class="card experience-card">
+            <div class="col-md-6 col-sm-12">
+              <div class="card experience-card mb-5">
                 <div class="card-body experience-card__body">
                   <h3 class="card-title experience-card__body--title">
                     Development Lead <span>@ Spotlight Media Group</span>
@@ -269,8 +260,8 @@
             <!-- JOB 1 END -->
 
             <!-- JOB 2 START -->
-            <div class="col-md-6">
-              <div class="card experience-card">
+            <div class="col-md-6 col-sm-12">
+              <div class="card experience-card mb-5">
                 <div class="card-body experience-card__body">
                   <h3 class="card-title experience-card__body--title">
                     Full-stack developer <span>@ August 99, Inc.</span>
@@ -299,9 +290,9 @@
           </div>
 
           <div class="row experience-set d-none">
-            <!-- JOB 2 START -->
+            <!-- JOB 3 START -->
             <div class="col-md-6">
-              <div class="card experience-card">
+              <div class="card experience-card mb-5">
                 <div class="card-body experience-card__body">
                   <h3 class="card-title experience-card__body--title">
                     Intern <span>@ August 99, Inc.</span>
@@ -324,11 +315,11 @@
                 </div>
               </div>
             </div>
-            <!-- JOB 2 END -->
+            <!-- JOB 3 END -->
 
-            <!-- JOB 1 START -->
+            <!-- JOB 4 START -->
             <div class="col-md-6">
-              <div class="card experience-card">
+              <div class="card experience-card mb-5">
                 <div class="card-body experience-card__body">
                   <h3 class="card-title experience-card__body--title">
                     Freelance Developer
@@ -353,10 +344,10 @@
                 </div>
               </div>
             </div>
-            <!-- JOB 1 END -->
+            <!-- JOB 4 END -->
           </div>
 
-          <div class="row">
+          <div class="row job-controller">
             <div class="col-md-12 text-center mt-5">
               <button id="prevJob" class="btn btn-outline-primary mr-3">
                 <i class="fas fa-chevron-left"></i>
@@ -384,7 +375,7 @@
           <!-- SECTION HEADER END -->
 
           <!-- LOKALOCAL START-->
-          <div class="row projects__row mb-10r">
+          <div class="row projects__row mb-5">
             <div class="col-md-6 text-left">
               <img
                 class="projects__row--img"
@@ -421,6 +412,13 @@
 
           <!-- DOTHS START-->
           <div class="row projects__row">
+            <div class="col-md-6 text-right d-none doths-img">
+              <img
+                class="projects__row--img"
+                src="img/cscon-alt.jpg"
+                alt="cs conferece 2017"
+              />
+            </div>
             <div class="col-md-6 text-left">
               <div class="projects__row">
                 <h4 class="projects__row--header">Featured project</h4>
@@ -449,7 +447,7 @@
                 </ul>
               </div>
             </div>
-            <div class="col-md-6 text-right">
+            <div class="col-md-6 text-right doths-img-right">
               <img
                 class="projects__row--img"
                 src="img/cscon-alt.jpg"
@@ -467,7 +465,7 @@
     <section id="contact">
       <div class="contact">
         <div class="container">
-          <h2 class="contact__main">Get In Touch</h2>
+          <h3 class="contact__main">Get In Touch</h3>
           <ul class="contact__social-icons">
             <li>
               <a href="https://github.com/jsmirandaiii" target="_blank">
@@ -516,7 +514,6 @@
     </footer>
     <!-- FOOTER END -->
 
-    <script src="js/vendors/typer.js"></script>
     <script src="js/vendors/three.r92.min.js"></script>
     <script src="js/vendors/vanta.net.min.js"></script>
     <script src="js/animated.js"></script>

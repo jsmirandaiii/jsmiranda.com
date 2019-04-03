@@ -1,0 +1,65 @@
+#projects {
+  background-color: $bg-secondary;
+
+  .projects {
+    &__row {
+      &--main {
+        display: inline-block;
+        font-size: $font-big;
+        font-weight: 700;
+        margin-bottom: 4rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid $color-special;
+      }
+
+      &--header {
+        color: $color-special;
+        margin-bottom: 1rem;
+      }
+
+      &--title {
+        font-weight: 700;
+        font-size: $font-regular;
+      }
+
+      &--img {
+        width: 90%;
+        z-index: 1;
+      }
+    }
+
+    .project-card {
+      border: 0;
+      margin-top: 3rem;
+      background-color: $bg-primary;
+      &__body {
+        &--text {
+          font-size: $font-regular;
+        }
+
+        &--stack {
+          margin-top: 1rem;
+          li {
+            display: inline-block;
+            list-style: none;
+            font-size: 1.2rem;
+            padding: 0.1rem 0.5rem;
+            margin-top: 1rem;
+          }
+        }
+      }
+    }
+
+    .stack-left {
+      li {
+        margin-right: 0.5rem;
+      }
+    }
+
+    .stack-right {
+      li {
+        margin-left: 0.5rem;
+      }
+    }
+  }
+}

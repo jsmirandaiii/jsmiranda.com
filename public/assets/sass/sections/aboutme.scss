@@ -1,0 +1,46 @@
+#aboutme {
+  background-color: $bg-secondary;
+
+  .aboutme {
+    &__row {
+      &--main {
+        display: inline-block;
+        font-size: $font-big;
+        font-weight: 700;
+        margin-bottom: 4rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid $color-special;
+      }
+
+      &--text {
+        font-size: $font-regular;
+        margin-bottom: 1rem;
+      }
+
+      &--skills {
+        margin-top: 2rem;
+        list-style: none;
+
+        li {
+          font-size: $font-regular;
+
+          &::before {
+            content: "</>";
+            margin-right: 1rem;
+            color: $color-special;
+          }
+        }
+      }
+
+      &__img-container {
+        text-align: center;
+
+        &--img {
+          border-radius: 50%;
+          border: 2px solid $color-special;
+          width: 30rem;
+        }
+      }
+    }
+  }
+}

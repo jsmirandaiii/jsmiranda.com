@@ -1,0 +1,109 @@
+@media only screen and (max-width: 992px) {
+  .btn-resume {
+    display: none;
+  }
+
+  .btn-resume-mobile {
+    display: block !important;
+  }
+
+  .header {
+    &__nav {
+      z-index: 9999;
+      ul {
+        width: 100%;
+        text-align: left;
+        margin-top: 10px;
+        background-color: $bg-primary;
+        border: 1px solid $color-special;
+        border-radius: 3px;
+
+        li {
+          display: block !important;
+          padding: 1rem 0.5rem;
+        }
+      }
+    }
+  }
+
+  .heading-primary {
+    &__name {
+      font-size: 4rem;
+    }
+
+    &__does {
+      font-size: 3rem;
+    }
+  }
+
+  header {
+    height: 80vh !important;
+  }
+
+  section {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #aboutme {
+    .aboutme {
+      &__row {
+        &--skills {
+          margin: 0;
+        }
+
+        &__img-container {
+          &--img {
+            width: 20rem;
+            margin-bottom: 3rem;
+          }
+        }
+      }
+    }
+  }
+
+  #projects {
+    .projects {
+      &__row {
+        text-align: left !important;
+        margin-top: 2rem;
+
+        .doths-img {
+          text-align: left !important;
+        }
+      }
+    }
+  }
+
+  #contact {
+    .contact {
+      &__text {
+        width: 100%;
+      }
+    }
+  }
+
+  .header {
+    &__text-box {
+      max-width: 520px;
+    }
+  }
+
+  .experience-set,
+  .doths-img {
+    display: block !important;
+  }
+
+  .job-controller,
+  .doths-img-right {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .logo {
+    margin-right: 1rem;
+  }
+}

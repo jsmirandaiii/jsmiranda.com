@@ -1,0 +1,41 @@
+$bg-primary: #23153c;
+$bg-secondary: #1c112f;
+$color-primary: #fff;
+$text-light: #fff;
+$text-semi-light: rgb(221, 221, 221);
+$color-special: #ff3f81;
+$text-dark: #000;
+$font-regular: 1.5rem;
+$font-big: 2.5rem;
+
+*,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  font-size: $font-regular;
+  box-sizing: border-box;
+  color: $text-semi-light;
+}
+
+section {
+  padding-top: 12.5rem;
+  padding-bottom: 12.5rem;
+}
+
+a:link,
+a:visited {
+  color: $color-special;
+  text-decoration: none;
+}

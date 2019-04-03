@@ -1,0 +1,60 @@
+#contact {
+  height: 60vh;
+  background-color: $bg-primary;
+
+  .contact {
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    &__main {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 2.5rem;
+      display: block;
+    }
+
+    &__social-icons {
+      margin-bottom: 2.5rem;
+
+      li {
+        display: inline-block;
+        list-style: none;
+      }
+
+      &--icon {
+        font-size: 4rem;
+        margin: 0 0.5rem;
+        color: $text-semi-light;
+      }
+    }
+
+    &__text {
+      margin: 0 auto;
+      width: 70%;
+      font-size: $font-regular;
+      margin-bottom: 2.5rem;
+      color: $text-semi-light;
+    }
+  }
+}
+
+.footer {
+  height: 6rem;
+  background-color: $bg-secondary;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 auto;
+
+  &__container {
+    margin: 0 auto;
+  }
+
+  &__text {
+    font-size: $font-regular;
+  }
+}

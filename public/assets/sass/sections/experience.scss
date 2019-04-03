@@ -1,0 +1,59 @@
+#experience {
+  background-color: $bg-primary;
+
+  .experience {
+    &__row {
+      &--main {
+        display: inline-block;
+        font-size: $font-big;
+        font-weight: 700;
+        margin-bottom: 4rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid $color-special;
+      }
+    }
+
+    .experience-card {
+      border: 0;
+      min-height: 38rem;
+
+      &__body {
+        background-color: $bg-secondary;
+        padding: 3rem;
+
+        &--title {
+          font-size: $font-regular;
+          font-weight: 700;
+          color: $text-light;
+          margin-bottom: 1rem;
+          span {
+            color: $color-special;
+            font-size: $font-regular;
+            font-weight: 700;
+          }
+        }
+
+        &--duration {
+          font-size: 1.3rem;
+          font-weight: 400;
+          color: $text-semi-light;
+        }
+
+        &--role {
+          margin-top: 3rem;
+          li {
+            list-style: none;
+            font-size: $font-regular;
+            margin: 1.5rem 0;
+
+            &::before {
+              content: ">";
+              margin-right: 0.5rem;
+              color: $color-special;
+            }
+          }
+        }
+      }
+    }
+  }
+}
