@@ -13,6 +13,9 @@ $text-semi-light: rgb(221, 221, 221);
 $text-dark: #000;
 $text-special: #ff3f81;
 
+$font-regular: 1.5rem;
+$font-big: 2.5rem;
+
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
@@ -22,8 +25,7 @@ html {
 body {
   font-weight: 400;
   font-family: "Montserrat", sans-serif;
-  line-height: 2;
-  letter-spacing: 1px;
+  font-size: $font-regular;
   box-sizing: border-box;
   color: $text-semi-light;
 }
@@ -40,7 +42,7 @@ a:visited {
 }
 
 .btn {
-  font-size: 1.5rem;
+  font-size: $font-regular;
   padding: 1rem 2rem;
 
   &-outline-primary {
@@ -72,7 +74,7 @@ a:visited {
         margin-left: 3rem;
         a {
           text-decoration: none;
-          font-size: 1.5rem;
+          font-size: $font-regular;
           color: $text-special;
         }
       }
@@ -95,7 +97,7 @@ a:visited {
 .heading-primary {
   &__greet {
     display: block;
-    font-size: 1.5rem;
+    font-size: $font-regular;
     color: $text-special;
   }
 
@@ -118,7 +120,6 @@ a:visited {
 
   &__intro {
     display: block;
-    font-size: 1.3rem;
   }
 }
 
@@ -129,7 +130,7 @@ a:visited {
     &__row {
       &--main {
         display: inline-block;
-        font-size: 2.5rem;
+        font-size: $font-big;
         font-weight: 700;
         margin-bottom: 4rem;
         padding-bottom: 0.5rem;
@@ -137,7 +138,7 @@ a:visited {
       }
 
       &--text {
-        font-size: 1.3rem;
+        font-size: $font-regular;
         margin-bottom: 1rem;
       }
 
@@ -146,10 +147,10 @@ a:visited {
         list-style: none;
 
         li {
-          font-size: 1.3rem;
+          font-size: $font-regular;
 
           &::before {
-            content: "•";
+            content: "</>";
             margin-right: 1rem;
             color: $text-special;
           }
@@ -175,7 +176,7 @@ a:visited {
     &__row {
       &--main {
         display: inline-block;
-        font-size: 2.5rem;
+        font-size: $font-big;
         font-weight: 700;
         margin-bottom: 4rem;
         padding-bottom: 0.5rem;
@@ -192,13 +193,13 @@ a:visited {
         padding: 3rem;
 
         &--title {
-          font-size: 1.5rem;
+          font-size: $font-regular;
           font-weight: 700;
           color: $text-light;
           margin-bottom: 1rem;
           span {
             color: $text-special;
-            font-size: 1.5rem;
+            font-size: $font-regular;
             font-weight: 700;
           }
         }
@@ -213,12 +214,12 @@ a:visited {
           margin-top: 3rem;
           li {
             list-style: none;
-            font-size: 1.3rem;
+            font-size: $font-regular;
             margin: 1.5rem 0;
 
             &::before {
-              content: "•";
-              margin-right: 1rem;
+              content: ">";
+              margin-right: 0.5rem;
               color: $text-special;
             }
           }
@@ -235,7 +236,7 @@ a:visited {
     &__row {
       &--main {
         display: inline-block;
-        font-size: 2.5rem;
+        font-size: $font-big;
         font-weight: 700;
         margin-bottom: 4rem;
         padding-bottom: 0.5rem;
@@ -249,7 +250,7 @@ a:visited {
 
       &--title {
         font-weight: 700;
-        font-size: 1.5rem;
+        font-size: $font-regular;
       }
 
       &--img {
@@ -264,7 +265,7 @@ a:visited {
       background-color: $bg-primary;
       &__body {
         &--text {
-          font-size: 1.3rem;
+          font-size: $font-regular;
         }
 
         &--stack {
@@ -307,7 +308,7 @@ a:visited {
     &__main {
       font-size: 4rem;
       font-weight: 700;
-      margin-bottom: 2.5rem;
+      margin-bottom: $font-big;
       display: block;
     }
 
@@ -329,7 +330,7 @@ a:visited {
     &__text {
       margin: 0 auto;
       width: 70%;
-      font-size: 1.3rem;
+      font-size: $font-regular;
       margin-bottom: 2.5rem;
       color: $text-semi-light;
     }
@@ -350,6 +351,6 @@ a:visited {
   }
 
   &__text {
-    font-size: 1.3rem;
+    font-size: $font-regular;
   }
 }
