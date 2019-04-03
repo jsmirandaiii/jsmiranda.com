@@ -366,6 +366,14 @@ a:visited {
 }
 
 @media only screen and (max-width: 992px) {
+  .btn-resume {
+    display: none;
+  }
+
+  .btn-resume-mobile {
+    display: block !important;
+  }
+
   .header {
     &__nav {
       z-index: 9999;
@@ -378,12 +386,29 @@ a:visited {
         border-radius: 3px;
 
         li {
-          animation-duration: 0ms;
-          animation-delay: 0ms;
           display: block !important;
           padding: 1rem 0.5rem;
         }
       }
     }
+  }
+
+  .heading-primary {
+    &__name {
+      font-size: 4rem;
+    }
+
+    &__does {
+      font-size: 3rem;
+    }
+  }
+
+  header {
+    height: 80vh !important;
+  }
+
+  section {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
   }
 }
