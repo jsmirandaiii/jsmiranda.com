@@ -1,12 +1,4 @@
-$bg-primary: #23153c;
-$bg-secondary: #1c112f;
-$color-primary: #fff;
-$text-light: #fff;
-$text-semi-light: rgb(221, 221, 221);
-$color-special: #ff3f81;
-$text-dark: #000;
-$font-regular: 1.5rem;
-$font-big: 2.5rem;
+@import "./variables.scss";
 
 *,
 *:after {

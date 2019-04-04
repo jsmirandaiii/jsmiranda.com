@@ -1,3 +1,5 @@
+@import "../variables.scss";
+
 #experience {
   background-color: $bg-primary;
 
@@ -15,7 +17,7 @@
 
     .experience-card {
       border: 0;
-      min-height: 38rem;
+      min-height: 40rem;
 
       &__body {
         background-color: $bg-secondary;
