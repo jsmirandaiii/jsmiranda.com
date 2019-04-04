@@ -4,6 +4,10 @@
   background-color: $bg-secondary;
 
   .projects {
+    &__row:not(:first-child) {
+      margin-bottom: 6rem;
+    }
+
     &__row {
       &--main {
         display: inline-block;
