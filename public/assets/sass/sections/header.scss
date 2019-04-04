@@ -7,18 +7,29 @@
   overflow: hidden;
   &__nav {
     margin-top: 3rem;
-    padding: 0;
 
     ul {
       width: 100%;
       text-align: right;
+      padding: 2rem 1rem;
+
       li {
         display: inline-block;
         margin-left: 3rem;
-        a {
+        a:link,
+        a:visited {
           text-decoration: none;
           font-size: $font-regular;
           color: $color-special;
+          padding-bottom: 0.5rem;
+          border-bottom: 1px solid $bg-primary;
+          transition: border-bottom 0.5s;
+        }
+
+        a:hover,
+        a:active {
+          padding-bottom: 5px;
+          border-bottom: 1px solid $color-special;
         }
       }
     }
