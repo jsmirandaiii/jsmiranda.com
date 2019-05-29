@@ -1,535 +1,453 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Jose Miranda | Software Engineer</title>
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/vendors/bootstrap.min.css" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="/css/vendors/animate.css" />
-    <link rel="stylesheet" href="/css/main.css" />
-    <script src="js/vendors/jquery-3.3.1.slim.min.js"></script>
-    <script src="js/vendors/popper.min.js"></script>
-    <script src="js/vendors/bootstrap.min.js"></script>
-  </head>
-  <body>
-    <!-- MAIN HEADER START -->
-    <header class="header">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Jose Miranda | Software Engineer</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" />
+  <link rel="stylesheet" href="css/vendors/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="/css/vendors/animate.css" />
+  <link rel="stylesheet" href="/css/main.css" />
+  <script src="js/vendors/jquery-3.3.1.slim.min.js"></script>
+  <script src="js/vendors/popper.min.js"></script>
+  <script src="js/vendors/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <!-- MAIN HEADER START -->
+  <header class="header">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg header__nav">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-content"
+          aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="logo animated fadeIn" style="animation-delay: 0.2s;">
+          <img alt="Jose Miranda" class="logo__img" src="/img/jsmiranda_logo.png" />
+          <span class="logo__text">jsmiranda</span>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbar-content">
+          <ul>
+            <li class="animated fadeIn">
+              <a href="#aboutme">About me</a>
+            </li>
+            <li class="animated fadeIn">
+              <a href="#experience">Experience</a>
+            </li>
+            <li class="animated fadeIn">
+              <a href="#projects">Projects</a>
+            </li>
+            <li class="animated fadeIn">
+              <a href="#contact">Contact</a>
+            </li>
+            <li class="animated fadeIn">
+              <button onclick="window.open('/jsmiranda_resume.pdf', '_blank')"
+                class="btn btn-resume btn-outline-primary">
+                Resume
+              </button>
+              <a target="_blank" href="/jsmiranda_resume.pdf" class="btn-resume-mobile d-none">Resume</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="header__text-box">
+        <div class="heading-primary">
+          <div class="row mb-5">
+            <h1 class="animated fadeInUp col-md-12 heading-primary__greet mb-3"
+              style="animation-delay: 0.2s; animation-duration: 1s">
+              Hi, my name is
+            </h1>
+            <h2 class="animated fadeInUp col-md-12 heading-primary__name mb-3"
+              style="animation-delay: 0.4s; animation-duration: .8s">
+              Jose Miranda III
+            </h2>
+            <h3 id="headingDoes_WebVer" class="animated fadeInUp col-md-12 heading-primary__does mb-5"
+              style="animation-delay: 0.6s; animation-duration: .6s">
+              I build supercharged web applications.
+            </h3>
+            <h3 id="headingDoes_MobileVer" class="d-none animated fadeInUp col-md-12 heading-primary__does mb-5"
+              style="animation-delay: 0.6s; animation-duration: .6s">
+              I build supercharged web & mobile applications.
+              <span class="cursor" data-owner="main"></span>
+            </h3>
+            <p class="animated fadeInUp col-md-6 col-sm-12 col-xs-12 heading-primary__intro"
+              style="animation-delay: 0.8s; animation-duration: .4s">
+              I'm a software engineer based in Manila, Philippines
+              specializing in developing (and sometimes designing)
+              high-quality, scalable web applications. Currently working as a
+              project-based software engineer.
+            </p>
+          </div>
+          <div class="row">
+            <div class="animated fadeInUp col-md-12" style="animation-delay: 1s; animation-duration: .2s">
+              <a href="mailto:jsmirandaiii@gmail.com" target="_top" class="btn btn-outline-primary">Get In Touch</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="animated fadeIn header__vanta clearix" style="animation-delay: 1.5s"></div>
+  </header>
+  <!-- MAIN HEADER END -->
+
+  <!-- ABOUT ME SECTION START -->
+  <section id="aboutme">
+    <div class="aboutme">
       <div class="container">
-        <nav class="navbar navbar-expand-lg header__nav">
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbar-content"
-            aria-controls="navbar-content"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <i class="fa fa-bars"></i>
-          </button>
-          <div class="logo animated fadeIn" style="animation-delay: 0.2s;">
-            <img
-              alt="Jose Miranda"
-              class="logo__img"
-              src="/img/jsmiranda_logo.png"
-            />
-            <span class="logo__text">jsmiranda</span>
+        <!-- SECTION HEADER START -->
+        <div class="row aboutme__row">
+          <div class="col-md-12">
+            <h3 class="aboutme__row--main">About Me</h3>
           </div>
-
-          <div class="collapse navbar-collapse" id="navbar-content">
-            <ul>
-              <li class="animated fadeIn">
-                <a href="#aboutme">About me</a>
-              </li>
-              <li class="animated fadeIn">
-                <a href="#experience">Experience</a>
-              </li>
-              <li class="animated fadeIn">
-                <a href="#projects">Projects</a>
-              </li>
-              <li class="animated fadeIn">
-                <a href="#contact">Contact</a>
-              </li>
-              <li class="animated fadeIn">
-                <button
-                  onclick="window.open('/jsmiranda_resume.pdf', '_blank')"
-                  class="btn btn-resume btn-outline-primary"
-                >
-                  Resume
-                </button>
-                <a
-                  target="_blank"
-                  href="/jsmiranda_resume.pdf"
-                  class="btn-resume-mobile d-none"
-                  >Resume</a
-                >
-              </li>
-            </ul>
-          </div>
-        </nav>
-        <div class="header__text-box">
-          <div class="heading-primary">
-            <div class="row mb-5">
-              <h1
-                class="animated fadeInUp col-md-12 heading-primary__greet mb-3"
-                style="animation-delay: 0.2s; animation-duration: 1s"
-              >
-                Hi, my name is
-              </h1>
-              <h2
-                class="animated fadeInUp col-md-12 heading-primary__name mb-3"
-                style="animation-delay: 0.4s; animation-duration: .8s"
-              >
-                Jose Miranda III
-              </h2>
-              <h3
-                id="headingDoes_WebVer"
-                class="animated fadeInUp col-md-12 heading-primary__does mb-5"
-                style="animation-delay: 0.6s; animation-duration: .6s"
-              >
-                I build supercharged web applications.
-              </h3>
-              <h3
-                id="headingDoes_MobileVer"
-                class="d-none animated fadeInUp col-md-12 heading-primary__does mb-5"
-                style="animation-delay: 0.6s; animation-duration: .6s"
-              >
-                I build supercharged web & mobile applications.
-                <span class="cursor" data-owner="main"></span>
-              </h3>
-              <p
-                class="animated fadeInUp col-md-6 col-sm-12 col-xs-12 heading-primary__intro"
-                style="animation-delay: 0.8s; animation-duration: .4s"
-              >
-                I'm a software engineer based in Manila, Philippines
-                specializing in developing (and sometimes designing)
-                high-quality, scalable web applications. Currently working as a
-                project-based software engineer.
-              </p>
+        </div>
+        <!-- SECTION HEADER END -->
+        <div class="row aboutme__row">
+          <!-- ABOUT ME IMAGE START -->
+          <div class="col-md-6">
+            <div class="aboutme__row__img-container">
+              <img class="aboutme__row__img-container--img" src="img/jose.jpg" alt="Jose Miranda" />
             </div>
+          </div>
+          <!-- ABOUT ME IMAGE END -->
+          <div class="col-md-6">
+            <p class="aboutme__row--text">
+              Hi I'm Jose, a full-stack software engineer who enjoys building
+              applications. I develop exceptional web and mobile applications
+              that provides efficient and intuitive user interfaces with
+              scalability in mind.
+            </p>
+            <p class="aboutme__row--text">
+              I actively attend developer community meetups and participate
+              hackathons where I can showcase my skills. On my free time I try
+              new libraries and frameworks and conduct a case study if I can
+              use them on my future projects.
+            </p>
+            <p class="aboutme__row--text mt-5">
+              Here's a few things I'm experienced with
+            </p>
+            <!-- SKILLS START -->
             <div class="row">
-              <div
-                class="animated fadeInUp col-md-12"
-                style="animation-delay: 1s; animation-duration: .2s"
-              >
-                <a
-                  href="mailto:jsmirandaiii@gmail.com"
-                  target="_top"
-                  class="btn btn-outline-primary"
-                  >Get In Touch</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div
-        class="animated fadeIn header__vanta clearix"
-        style="animation-delay: 1.5s"
-      ></div>
-    </header>
-    <!-- MAIN HEADER END -->
-
-    <!-- ABOUT ME SECTION START -->
-    <section id="aboutme">
-      <div class="aboutme">
-        <div class="container">
-          <!-- SECTION HEADER START -->
-          <div class="row aboutme__row">
-            <div class="col-md-12">
-              <h3 class="aboutme__row--main">About Me</h3>
-            </div>
-          </div>
-          <!-- SECTION HEADER END -->
-          <div class="row aboutme__row">
-            <!-- ABOUT ME IMAGE START -->
-            <div class="col-md-6">
-              <div class="aboutme__row__img-container">
-                <img
-                  class="aboutme__row__img-container--img"
-                  src="img/jose.jpg"
-                  alt="Jose Miranda"
-                />
-              </div>
-            </div>
-            <!-- ABOUT ME IMAGE END -->
-            <div class="col-md-6">
-              <p class="aboutme__row--text">
-                Hi I'm Jose, a full-stack software engineer who enjoys building
-                applications. I develop exceptional web and mobile applications
-                that provides efficient and intuitive user interfaces with
-                scalability in mind.
-              </p>
-              <p class="aboutme__row--text">
-                I actively attend developer community meetups and participate
-                hackathons where I can showcase my skills. On my free time I try
-                new libraries and frameworks and conduct a case study if I can
-                use them on my future projects.
-              </p>
-              <p class="aboutme__row--text mt-5">
-                Here's a few things I'm experienced with
-              </p>
-              <!-- SKILLS START -->
-              <div class="row">
-                <div class="col-md-6">
-                  <ul class="aboutme__row--skills">
-                    <li>HTML & CSS</li>
-                    <li>SASS</li>
-                    <li>Javascript</li>
-                    <li>React + Redux</li>
-                    <li>React Native</li>
-                  </ul>
-                </div>
-                <div class="col-md-6">
-                  <ul class="aboutme__row--skills">
-                    <li>Node</li>
-                    <li>GraphQL</li>
-                    <li>Apollo Server/Client</li>
-                    <li>MongoDB</li>
-                    <li>PostgreSQL</li>
-                  </ul>
-                </div>
-              </div>
-              <!-- SKILLS END -->
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- ABOUT ME SECTION END -->
-
-    <!-- EXPERIENCE SECTION START -->
-    <section id="experience">
-      <div class="experience">
-        <div class="container">
-          <!-- SECTION HEADER START -->
-          <div class="row experience__row">
-            <div class="col-md-12">
-              <h3 class="experience__row--main">Where I've worked</h3>
-            </div>
-          </div>
-          <!-- SECTION HEADER END -->
-
-          <div class="row experience-set">
-            <!-- JOB 1 START -->
-            <div class="col-md-6 col-sm-12">
-              <div class="card experience-card mb-5">
-                <div class="card-body experience-card__body">
-                  <h3 class="card-title experience-card__body--title">
-                    Development Team Lead <span>@ Spotlight Media Group</span>
-                  </h3>
-                  <span class="experience-card__body--duration"
-                    >August 2018 &mdash; Present</span
-                  >
-                  <ul class="experience-card__body--role">
-                    <li>
-                      Oversee the tools and technologies used within the team
-                    </li>
-                    <li>
-                      Lead selection of the appropriate technology/library for
-                      each component to be developed
-                    </li>
-                    <li>
-                      Designed upgraded web application and complementary tools
-                      to improve usability, support, and maintenance of the
-                      application
-                    </li>
-                    <li>
-                      Work with variety of different languages, frameworks and
-                      libraries such as NodeJS, MongoDB, Express, GraphQL, React
-                      and Redux
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <!-- JOB 1 END -->
-
-            <!-- JOB 2 START -->
-            <div class="col-md-6 col-sm-12">
-              <div class="card experience-card mb-5">
-                <div class="card-body experience-card__body">
-                  <h3 class="card-title experience-card__body--title">
-                    Full-stack developer <span>@ August 99, Inc.</span>
-                  </h3>
-                  <span class="experience-card__body--duration"
-                    >March 2018 &mdash; August 2018</span
-                  >
-                  <ul class="experience-card__body--role">
-                    <li>
-                      Developed and shipped web application for booking and
-                      reservation of coworking spaces using Node and MongoDB
-                    </li>
-                    <li>
-                      Architected and implemented the online payment processing,
-                      which let user book and pay coworking spaces on the go
-                    </li>
-                    <li>
-                      Communicate with multidisciplinary teams of developers,
-                      designers, clients and managers on a daily basis
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <!-- JOB 2 END -->
-          </div>
-
-          <div class="row experience-set d-none">
-            <!-- JOB 3 START -->
-            <div class="col-md-6">
-              <div class="card experience-card mb-5">
-                <div class="card-body experience-card__body">
-                  <h3 class="card-title experience-card__body--title">
-                    Intern <span>@ August 99, Inc.</span>
-                  </h3>
-                  <span class="experience-card__body--duration"
-                    >August 2017 &mdash; March 2018</span
-                  >
-                  <ul class="experience-card__body--role">
-                    <li>
-                      Developed and maintained code for client websites
-                      primarily using HTML, CSS, Javascript, jQuery and
-                      Wordpress
-                    </li>
-                    <li>
-                      Modified design to create a responsive page using
-                      Bootstrap
-                    </li>
-                    <li>
-                      Improved coding of CSS and JavaScript to enhance
-                      functionality and user experience
-                    </li>
-                    <li>
-                      Manually tested sites in various browsers and mobile
-                      devices to ensure cross-browser compatibility and
-                      responsiveness
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <!-- JOB 3 END -->
-
-            <!-- JOB 4 START -->
-            <div class="col-md-6">
-              <div class="card experience-card mb-5">
-                <div class="card-body experience-card__body">
-                  <h3 class="card-title experience-card__body--title">
-                    Freelance Developer
-                    <span>@ Upwork, Fiverr & Freelancer</span>
-                  </h3>
-                  <span class="experience-card__body--duration"
-                    >July 2013 &mdash; March 2016</span
-                  >
-                  <ul class="experience-card__body--role">
-                    <li>
-                      Worked concurrently on several projects
-                    </li>
-                    <li>
-                      Developed and designed dozens of Windows Form Applications
-                      (WFA) using C# and VB.NET
-                    </li>
-                    <li>
-                      Perform migration and maintenance of servers for clients
-                    </li>
-                    <li>
-                      Worked on website fixes coded in PHP
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <!-- JOB 4 END -->
-          </div>
-
-          <div class="row job-controller">
-            <div class="col-md-12 text-center mt-5">
-              <button id="prevJob" class="btn btn-outline-primary mr-3">
-                <i class="fas fa-chevron-left"></i>
-              </button>
-              <button id="nextJob" class="btn btn-outline-primary">
-                <i class="fas fa-chevron-right"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- EXPERIENCE SECTION END -->
-
-    <!-- EXPERIENCE SECTION START -->
-    <section id="projects">
-      <div class="projects">
-        <div class="container">
-          <!-- SECTION HEADER START -->
-          <div class="row projects__row">
-            <div class="col-md-12">
-              <h3 class="projects__row--main">Some things I've made</h3>
-            </div>
-          </div>
-          <!-- SECTION HEADER END -->
-
-          <!-- LOKALOCAL START-->
-          <div class="row projects__row">
-            <div class="col-md-6 text-left">
-              <img
-                class="projects__row--img"
-                src="img/hackmanila-alt.jpg"
-                alt="localocal hackmanila"
-              />
-            </div>
-            <div class="col-md-6 text-right">
-              <div class="projects__row">
-                <h4 class="projects__row--header">Featured project</h4>
-                <h3 class="projects__row--title">
-                  Lokalocal iOS & Android Mobile App
-                </h3>
-                <div class="card project-card">
-                  <div class="card-body project-card__body">
-                    <p class="project-card__body--text">
-                      Developed a cross-platform mobile application (iOS &
-                      Android) for a co-working platform using React Native in
-                      under 48 hours. Using the app, the customers may view,
-                      track and manage their bookings and credits. Lokalocal is
-                      my project entry for HackManila 2018 Hackathon and won 1st
-                      place on its category.
-                    </p>
-                  </div>
-                </div>
-                <ul class="project-card__body--stack stack-right">
-                  <li>NodeJS</li>
-                  <li>Express</li>
-                  <li>MongoDB</li>
+              <div class="col-md-6">
+                <ul class="aboutme__row--skills">
+                  <li>HTML & CSS</li>
+                  <li>SASS</li>
+                  <li>Javascript</li>
+                  <li>React + Redux</li>
                   <li>React Native</li>
-                  <li>Expo</li>
-                  <li>Heroku</li>
                 </ul>
               </div>
-            </div>
-          </div>
-          <!-- LOKALOCAL END -->
-
-          <!-- DOTHS START-->
-          <div class="row projects__row">
-            <div class="col-md-6 text-right d-none doths-img">
-              <img
-                class="projects__row--img"
-                src="img/cscon-alt.jpg"
-                alt="cs conferece 2017"
-              />
-            </div>
-            <div class="col-md-6 text-left">
-              <div class="projects__row">
-                <h4 class="projects__row--header">Featured project</h4>
-                <h3 class="projects__row--title">
-                  DOTHS - Learning Management System
-                </h3>
-                <div class="card project-card">
-                  <div class="card-body project-card__body">
-                    <p class="project-card__body--text">
-                      Contributed to the front-end and back-end development for
-                      the undergraduate computer science thesis. DOTHS -
-                      Learning Management System uses OpenCV and Marvin Image
-                      Processing Framework to detect and recognize American Sign
-                      Language (ASL) using low cost color-patterned gloves and
-                      webcam.
-                    </p>
-                  </div>
-                </div>
-                <ul class="project-card__body--stack stack-left">
-                  <li>Java</li>
-                  <li>OpenCV</li>
-                  <li>HTML</li>
-                  <li>CSS</li>
-                  <li>PHP</li>
+              <div class="col-md-6">
+                <ul class="aboutme__row--skills">
+                  <li>Node</li>
+                  <li>GraphQL</li>
+                  <li>Apollo Server/Client</li>
+                  <li>MongoDB</li>
                   <li>PostgreSQL</li>
                 </ul>
               </div>
             </div>
-            <div class="col-md-6 text-right doths-img-right">
-              <img
-                class="projects__row--img"
-                src="img/cscon-alt.jpg"
-                alt="cs conferece 2017"
-              />
+            <!-- SKILLS END -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ABOUT ME SECTION END -->
+
+  <!-- EXPERIENCE SECTION START -->
+  <section id="experience">
+    <div class="experience">
+      <div class="container">
+        <!-- SECTION HEADER START -->
+        <div class="row experience__row">
+          <div class="col-md-12">
+            <h3 class="experience__row--main">Where I've worked</h3>
+          </div>
+        </div>
+        <!-- SECTION HEADER END -->
+
+        <div class="row experience-set">
+          <!-- JOB 1 START -->
+          <div class="col-md-6 col-sm-12">
+            <div class="card experience-card mb-5">
+              <div class="card-body experience-card__body">
+                <h3 class="card-title experience-card__body--title">
+                  Development Team Lead <span>@ Spotlight Media Group</span>
+                </h3>
+                <span class="experience-card__body--duration">August 2018 &mdash; Present</span>
+                <ul class="experience-card__body--role">
+                  <li>
+                    Oversee the tools and technologies used within the team
+                  </li>
+                  <li>
+                    Lead selection of the appropriate technology/library for
+                    each component to be developed
+                  </li>
+                  <li>
+                    Designed upgraded web application and complementary tools
+                    to improve usability, support, and maintenance of the
+                    application
+                  </li>
+                  <li>
+                    Work with variety of different languages, frameworks and
+                    libraries such as NodeJS, MongoDB, Express, GraphQL, React
+                    and Redux
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-          <!-- DOTHS END -->
+          <!-- JOB 1 END -->
+
+          <!-- JOB 2 START -->
+          <div class="col-md-6 col-sm-12">
+            <div class="card experience-card mb-5">
+              <div class="card-body experience-card__body">
+                <h3 class="card-title experience-card__body--title">
+                  Full-stack developer <span>@ August 99, Inc.</span>
+                </h3>
+                <span class="experience-card__body--duration">March 2018 &mdash; August 2018</span>
+                <ul class="experience-card__body--role">
+                  <li>
+                    Developed and shipped web application for booking and
+                    reservation of coworking spaces using Node and MongoDB
+                  </li>
+                  <li>
+                    Architected and implemented the online payment processing,
+                    which let user book and pay coworking spaces on the go
+                  </li>
+                  <li>
+                    Communicate with multidisciplinary teams of developers,
+                    designers, clients and managers on a daily basis
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- JOB 2 END -->
+        </div>
+
+        <div class="row experience-set d-none">
+          <!-- JOB 3 START -->
+          <div class="col-md-6">
+            <div class="card experience-card mb-5">
+              <div class="card-body experience-card__body">
+                <h3 class="card-title experience-card__body--title">
+                  Intern <span>@ August 99, Inc.</span>
+                </h3>
+                <span class="experience-card__body--duration">August 2017 &mdash; March 2018</span>
+                <ul class="experience-card__body--role">
+                  <li>
+                    Developed and maintained code for client websites
+                    primarily using HTML, CSS, Javascript, jQuery and
+                    Wordpress
+                  </li>
+                  <li>
+                    Modified design to create a responsive page using
+                    Bootstrap
+                  </li>
+                  <li>
+                    Improved coding of CSS and JavaScript to enhance
+                    functionality and user experience
+                  </li>
+                  <li>
+                    Manually tested sites in various browsers and mobile
+                    devices to ensure cross-browser compatibility and
+                    responsiveness
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- JOB 3 END -->
+
+          <!-- JOB 4 START -->
+          <div class="col-md-6">
+            <div class="card experience-card mb-5">
+              <div class="card-body experience-card__body">
+                <h3 class="card-title experience-card__body--title">
+                  Freelance Developer
+                  <span>@ Upwork, Fiverr & Freelancer</span>
+                </h3>
+                <span class="experience-card__body--duration">July 2013 &mdash; March 2016</span>
+                <ul class="experience-card__body--role">
+                  <li>
+                    Worked concurrently on several projects
+                  </li>
+                  <li>
+                    Developed and designed dozens of Windows Form Applications
+                    (WFA) using C# and VB.NET
+                  </li>
+                  <li>
+                    Perform migration and maintenance of servers for clients
+                  </li>
+                  <li>
+                    Worked on website fixes coded in PHP
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- JOB 4 END -->
+        </div>
+
+        <div class="row job-controller">
+          <div class="col-md-12 text-center mt-5">
+            <button id="prevJob" class="btn btn-outline-primary mr-3">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button id="nextJob" class="btn btn-outline-primary">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
         </div>
       </div>
-    </section>
-    <!-- EXPERIENCE SECTION END -->
+    </div>
+  </section>
+  <!-- EXPERIENCE SECTION END -->
 
-    <!-- CONCTACT SECTION END -->
-    <section id="contact">
-      <div class="contact">
-        <div class="container">
-          <h3 class="contact__main">Get In Touch</h3>
-          <ul class="contact__social-icons">
-            <li>
-              <a href="https://github.com/jsmirandaiii" target="_blank">
-                <i class="contact__social-icons--icon fab fa-github-square"></i
-              ></a>
-            </li>
-            <li>
-              <a
-                href="https://www.linkedin.com/in/jsmirandaiii/"
-                target="_blank"
-                ><i class="contact__social-icons--icon fab fa-linkedin"></i
-              ></a>
-            </li>
-            <li>
-              <a href="https://www.facebook.com/terds001" target="_blank"
-                ><i
-                  class="contact__social-icons--icon fab fa-facebook-square"
-                ></i
-              ></a>
-            </li>
-          </ul>
-          <p class="contact__text">
-            I'm currently looking for projects and full time job opportunities
-            and my inbox is always open. Whether a potential project, job offer
-            or just to say hi, I'll do my best to reply to your message.
-          </p>
-          <a
-            href="mailto:jsmirandaiii@gmail.com"
-            class="contact__btn btn btn-outline-primary"
-            target="_top"
-            >Say hello via email 👋</a
-          >
+  <!-- EXPERIENCE SECTION START -->
+  <section id="projects">
+    <div class="projects">
+      <div class="container">
+        <!-- SECTION HEADER START -->
+        <div class="row projects__row">
+          <div class="col-md-12">
+            <h3 class="projects__row--main">Some things I've made</h3>
+          </div>
         </div>
-      </div>
-    </section>
-    <!-- CONCTACT SECTION END -->
+        <!-- SECTION HEADER END -->
 
-    <!-- FOOTER START -->
-    <footer class="footer">
-      <div class="footer__container">
-        <span class="footer__text"
-          >Made in PH with <i class="far fa-heart"></i> by Jose Miranda
-          III</span
-        >
-      </div>
-    </footer>
-    <!-- FOOTER END -->
+        <!-- LOKALOCAL START-->
+        <div class="row projects__row">
+          <div class="col-md-6 text-left">
+            <img class="projects__row--img" src="img/hackmanila-alt.jpg" alt="localocal hackmanila" />
+          </div>
+          <div class="col-md-6 text-right">
+            <div class="projects__row">
+              <h4 class="projects__row--header">Featured project</h4>
+              <h3 class="projects__row--title">
+                Lokalocal iOS & Android Mobile App
+              </h3>
+              <div class="card project-card">
+                <div class="card-body project-card__body">
+                  <p class="project-card__body--text">
+                    Developed a cross-platform mobile application (iOS &
+                    Android) for a co-working platform using React Native in
+                    under 48 hours. Using the app, the customers may view,
+                    track and manage their bookings and credits. Lokalocal is
+                    my project entry for HackManila 2018 Hackathon and won 1st
+                    place on its category.
+                  </p>
+                </div>
+              </div>
+              <ul class="project-card__body--stack stack-right">
+                <li>NodeJS</li>
+                <li>Express</li>
+                <li>MongoDB</li>
+                <li>React Native</li>
+                <li>Expo</li>
+                <li>Heroku</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- LOKALOCAL END -->
 
-    <script src="js/vendors/three.r92.min.js"></script>
-    <script src="js/vendors/vanta.net.min.js"></script>
-    <script src="js/animated.js"></script>
-    <script src="js/init.js"></script>
-  </body>
+        <!-- DOTHS START-->
+        <div class="row projects__row">
+          <div class="col-md-6 text-right d-none doths-img">
+            <img class="projects__row--img" src="img/cscon-alt.jpg" alt="cs conferece 2017" />
+          </div>
+          <div class="col-md-6 text-left">
+            <div class="projects__row">
+              <h4 class="projects__row--header">Featured project</h4>
+              <h3 class="projects__row--title">
+                DOTHS - Learning Management System
+              </h3>
+              <div class="card project-card">
+                <div class="card-body project-card__body">
+                  <p class="project-card__body--text">
+                    Contributed to the front-end and back-end development for
+                    the undergraduate computer science thesis. DOTHS -
+                    Learning Management System uses OpenCV and Marvin Image
+                    Processing Framework to detect and recognize American Sign
+                    Language (ASL) using low cost color-patterned gloves and
+                    webcam.
+                  </p>
+                </div>
+              </div>
+              <ul class="project-card__body--stack stack-left">
+                <li>Java</li>
+                <li>OpenCV</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>PHP</li>
+                <li>PostgreSQL</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 text-right doths-img-right">
+            <img class="projects__row--img" src="img/cscon-alt.jpg" alt="cs conferece 2017" />
+          </div>
+        </div>
+        <!-- DOTHS END -->
+      </div>
+    </div>
+  </section>
+  <!-- EXPERIENCE SECTION END -->
+
+  <!-- CONCTACT SECTION END -->
+  <section id="contact">
+    <div class="contact">
+      <div class="container">
+        <h3 class="contact__main">Get In Touch</h3>
+        <ul class="contact__social-icons">
+          <li>
+            <a href="https://github.com/jsmirandaiii" target="_blank">
+              <i class="contact__social-icons--icon fab fa-github-square"></i></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/jsmirandaiii/" target="_blank"><i
+                class="contact__social-icons--icon fab fa-linkedin"></i></a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/terds001" target="_blank"><i
+                class="contact__social-icons--icon fab fa-facebook-square"></i></a>
+          </li>
+        </ul>
+        <p class="contact__text">
+          I'm currently looking for projects and full time job opportunities
+          and my inbox is always open. Whether a potential project, job offer
+          or just to say hi, I'll do my best to reply to your message.
+        </p>
+        <a href="mailto:jsmirandaiii@gmail.com" class="contact__btn btn btn-outline-primary" target="_top">Say hello via
+          email 👋</a>
+      </div>
+    </div>
+  </section>
+  <!-- CONCTACT SECTION END -->
+
+  <!-- FOOTER START -->
+  <footer class="footer">
+    <div class="footer__container">
+      <span class="footer__text">Made in PH with <i class="far fa-heart"></i> by Jose Miranda
+        III</span>
+    </div>
+  </footer>
+  <!-- FOOTER END -->
+
+  <script src="js/vendors/three.r92.min.js"></script>
+  <script src="js/vendors/vanta.net.min.js"></script>
+  <script src="js/animated.js"></script>
+  <script src="js/init.js"></script>
+</body>
+
 </html>
